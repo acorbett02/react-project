@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function Textbox() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <form>
+  <textarea class="textarea white bg-gray" placeholder="Write something.."></textarea>
+    </form>
   );
 }
 
-export default App;
+function Messaging() {
+  return(
+    <div class="messaging bg-white"></div>
+  );
+}
+
+export default function MyApp() {
+  return (
+    <div>
+      <h1 class="MyApp white">Alissaa</h1>
+      <Messaging />
+      <Textbox />
+      <input type="submit" value="Submit"></input>
+    </div>
+  );
+}
